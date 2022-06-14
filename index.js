@@ -17,7 +17,7 @@ function renderProjectLink(projectPath) {
     let projectName = projectPath.replace("/projects/", "").replaceAll("-", " ");
     let projectUrl = projectPath.replace("/", "") + "/index.html";
     console.log(projectName);
-    linksContainer.innerHTML = `<a href="${projectUrl}" class="project-link">${projectName}</a>`;
+    //linksContainer.innerHTML += `<a href="${projectUrl}" class="project-link">${projectName}</a>`;
     console.log(projectUrl)
     console.log(linksContainer.innerHtml)
 }
