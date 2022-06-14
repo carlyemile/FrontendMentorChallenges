@@ -1,0 +1,511 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+}
+
+header {
+    background: url("images/bg-pattern-intro-desktop.svg") 20%, linear-gradient(45deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%)) no-repeat;
+    background-size: 200%;
+    color: white;
+    margin: 0;
+    padding: 3em 0;
+    width: 100%;
+    border-radius: 0 0 0 70px;
+}
+
+.container {
+    width: 75%;
+    margin: auto;
+    max-width: 1170px;
+}
+
+.flex {
+    display: flex;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.row {
+    margin-bottom: 2em;
+}
+
+@media (max-width: 800px){
+
+    header {
+        background: url("images/bg-pattern-intro-mobile.svg") 20%, linear-gradient(45deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%)) no-repeat;
+    }
+    .container {
+        width: 90%;
+    }
+}
+
+/***************
+Navigation 
+****************/
+nav {
+    display: flex;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+header a {
+    text-decoration: none;
+    color: white; 
+    letter-spacing: 0.5px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+nav li a {
+    opacity: 0.9;
+}
+
+
+nav li a:hover, nav li a:active {
+    text-decoration: underline;
+} 
+
+nav li:hover .arrow-icon, nav li:active .arrow-icon {
+    transform: rotate(180deg) scaleX(-1);
+} 
+
+.subnav {
+    display: none;
+    background: white;
+    position: absolute;
+    z-index: 1;
+    padding: 1em;
+    width:150px;
+    border-radius: 10px;
+}
+
+nav li:hover .subnav, nav li:active .subnav {
+    display:block;
+} 
+
+
+
+.subnav a {
+    display: block;
+    color: hsl(240, 10%, 16%);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1em 0;
+    transition: 200ms;
+}
+
+.subnav a:hover, .subnav a:active {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo {
+    object-fit: contain;
+}
+
+.arrow-icon {
+    margin-left: 0.3em;
+}
+
+.login-btns {
+    margin-left: auto;
+    align-self: center;
+}
+
+.btn {
+    border-radius: 20px;
+    padding: 1em 2.5em;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    transition: 200ms;
+}
+
+.btn-light {
+    background: white;
+    color:hsl(356, 100%, 66%);
+}
+
+.btn:hover, .btn:active {
+    background: rgba(255, 255, 255, 0.4);
+    color: white;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 800px){
+    nav li {
+        display: none;
+    }
+
+    .login-btns {
+        display: none;
+    }
+
+    .hamburger {
+        margin-left: auto;
+        align-self: center;
+        display: inline-block;
+    }
+}
+
+/*****************/
+
+
+/****************
+Header content
+*****************/
+.btn-border {
+    border: 1px solid white;
+}
+
+.btn-border:hover, .btn-border:active {
+    color:rgba(255, 61, 84, 0.6);
+    background: white;
+}
+
+.header-main h1, .header-main p {
+    font-family: 'Overpass', sans-serif;
+}
+
+.header-main h1 {
+    font-size: 3rem;
+    margin-bottom: 0.2em;
+}
+
+.header-main p {
+    margin-bottom: 3em;
+    font-weight: 300;
+}
+
+.header-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em;
+}
+
+.header-main a {
+    padding: 1em;
+    margin-right:0.5em;
+}
+
+@media (max-width: 800px){
+    .header-main {
+        text-align: center;
+    }
+}
+
+/******************/
+
+/************
+Main content
+*************/
+
+
+
+main h2 {
+    font-size: 2rem;
+}
+
+main h2, h3 {
+    color: hsl(208, 49%, 24%);
+}
+
+main p {
+    color: hsl(207, 13%, 34%);
+    font-weight: 300;
+    line-height: 1.5em;
+    letter-spacing: 0.5px;
+}
+
+.row {
+    padding-bottom: 1em;
+}
+
+@media (max-width: 800px){
+
+    main {
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+    }
+}
+/*************/
+
+
+/***************
+First container
+***************/
+
+.first {
+    padding-top: 5em;
+    padding-bottom: 7em;
+}
+
+.first .flex {
+    justify-content: stretch;
+}
+
+.first h2 {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+
+
+.first .img-wrap {
+    padding-bottom: 1px;
+    position: relative; 
+    width: 40%;
+  }
+  
+.first img {
+    position: absolute;
+    height: 120%;
+    left: 0;
+    margin-left: 3em;
+    margin-top: -5em;
+    margin-right: -10em;
+    overflow: hidden;
+  }
+
+  body{
+      overflow-x: hidden;
+  }
+
+  .img-mobile {
+      display: none;
+  }
+
+  @media (max-width: 800px){
+    .flex {
+        flex-direction: column;
+    }
+
+    .col-2 {
+        width: 100%;
+        order: 1;
+    }
+
+    .first {
+        padding-bottom: 20em;
+    }
+
+    .first .img-wrap {
+        width: 100%;
+        order: 0;
+        
+      }
+
+      .first img {
+          position: relative;
+          width: 100%;
+          height: auto;
+          margin: 0;
+      }
+
+      .img-desktop {
+          display: none;
+      }
+
+      .img-mobile {
+          display: inherit;
+      }
+}
+/**************/
+
+
+/***************
+Second container
+***************/
+.second-bg {
+    background: url("images/bg-pattern-circles.svg") left -10em bottom -2em no-repeat, linear-gradient(45deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%)) no-repeat;
+    background-size: 50%, auto;
+    border-radius: 0 70px;
+    background-position: left -100px bottom, auto;
+    width: 100%;
+}
+
+.second h2, .second p{
+    color: white;
+}
+
+.second .col-2{
+    padding: 5em 0;
+    margin-left: 2em;
+    /* height: 100%; */
+}
+
+.second .phones-img {
+    width: 40%;
+    height: fit-content;
+    /* margin-top: -5%; */
+}
+
+@media (max-width: 800px){
+
+    .second-bg {
+        background: url("images/bg-pattern-circles.svg") center -10em no-repeat, linear-gradient(45deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%)) no-repeat;
+        background-size: 100%, auto;
+        border-radius: 0 150px;
+        width: 100%;
+    }
+
+    .second .phones-img {
+        width: 90%;
+        height: fit-content;
+        margin-top: -15em;
+    }
+
+    .second .col-2{
+        padding: 0;
+        margin-left: 0;
+        margin-bottom: 10em;
+        /* height: 100%; */
+    }
+}
+
+
+/**************/
+
+
+
+/***************
+Third container
+***************/
+/* .third-bg {
+    background-image: url("images/illustration-laptop-desktop.svg");
+    background-size: 50% auto;
+    background-repeat: no-repeat;
+    background-position: left -30% center;
+} */
+
+.third {
+    padding: 10em 0;
+}
+
+.third .col-2 {
+    margin-left: 2em;
+}
+
+.third .img-wrap {
+    padding-bottom: 1px;
+    position: relative; 
+    width: 40%;
+    margin: 0;
+    margin-right: 3em;
+  }
+  
+.third img {
+    position: absolute;
+    height: 120%;
+    margin-top: -5em;
+    margin-left: -15em; 
+    overflow: hidden;
+  }
+
+  @media (max-width: 800px){
+    .flex {
+        flex-direction: column;
+    }
+
+    .col-2 {
+        width: 100%;
+        order: 1;
+    }
+
+    .third {
+        padding: 5em 0;
+    }
+
+    .third .img-wrap {
+        width: 100%;
+        order: 0;
+        
+      }
+      .third .col-2 {
+        margin-left: 0em;
+    }
+
+      .third img {
+          position: relative;
+          width: 100%;
+          height: auto;
+          margin: 0;
+      }
+
+      .img-desktop {
+          display: none;
+      }
+
+      .img-mobile {
+          display: inherit;
+      }
+
+    }
+
+/**************/
+
+
+/***************
+Footer
+***************/
+
+footer {
+    background: hsl(240, 10%, 16%);
+    border-radius: 0 70px 0 0;
+    color: hsl(240, 2%, 79%);
+    padding: 3em 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: hsl(240, 2%, 79%);
+    display: block;
+    margin: 1em 0;
+}
+
+footer a:hover, footer a:active {
+    text-decoration: underline;
+}
+
+.col-4 {
+    width: 25%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.col-title {
+    font-weight: bold;
+    margin-bottom: 2em;
+    color: white;
+}
+
+@media (max-width: 800px){
+    .flex {
+        align-items: center;
+    }
+
+    footer img {
+        padding-bottom: 2em;
+    }
+}
+
+/**************/
