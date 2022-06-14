@@ -39,6 +39,7 @@ header a:hover, header a:active {
     transition: transform 200ms;
     font-size: 1.2rem;
     text-align: center;
+    text-transform: capitalize;
 }
 
 .project-link:hover, .project-link:active {
