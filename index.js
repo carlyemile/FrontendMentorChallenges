@@ -2,6 +2,8 @@ const linksContainer = document.getElementById("links");
 const folder = "/projects/";
 const projects = [
     "four-card-feature-section-master",
+    "intro-component-with-signup-form-master",
+    "projects/blogr-landing-page-main"
 ];
 
 // TO-DO - does not work on remote server
