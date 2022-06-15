@@ -31,19 +31,20 @@ header a:hover, header a:active {
     background-color: rgb(244, 247, 244);
     padding: 1em;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px 1px rgb(223, 223, 223);
+    box-shadow: 5px 5px 2px 1px rgb(226, 235, 223);
     width: 100%;
     display: block;
-    color: rgb(41, 41, 41);
+    color: rgb(66, 66, 66);
     text-decoration: none;
     transition: transform 200ms;
     font-size: 1.2rem;
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: 1em;
 }
 
 .project-link:hover, .project-link:active {
     transform: scale(1.05);
     font-weight: 800;
-    color: black;
+    color: rgb(35, 35, 35);
 }

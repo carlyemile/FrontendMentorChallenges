@@ -119,6 +119,7 @@ form button {
     box-shadow: 0 3px 0 0 hsl(154, 61%, 42%);
     color: white;
     text-transform: uppercase;
+    transition: 200ms;
 }
 
 form button:hover, form button:focus {
