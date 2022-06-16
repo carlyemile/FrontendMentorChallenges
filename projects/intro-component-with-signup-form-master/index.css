@@ -115,6 +115,11 @@ form input:active, form input:focus {
 }
 
 .terms {
+    font-size: 0.8rem;
+    margin: 1.5em 0;
+}
+
+.terms a {
     color: hsl(0, 100%, 74%);
     font-weight: 600;
     text-decoration: none;
