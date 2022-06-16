@@ -126,7 +126,7 @@ form input:active, form input:focus {
     transition: 200ms;
 }
 
-.terms:hover, .terms:focus {
+.terms a:hover, .terms a:focus {
     text-decoration: underline;
 }
 
